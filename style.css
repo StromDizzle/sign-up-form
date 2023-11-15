@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.banner-section {
+    background-image: url('./images/winter-train.jpg');
+}
+
+.form-section {
+    flex: 2;
+}
