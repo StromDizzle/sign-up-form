@@ -1,6 +1,7 @@
 :root {
     --primary-background-color: #ededed;
     --secondary-background-color: white;
+    --button-color: #304529;
 }
 
 @font-face {
@@ -23,6 +24,16 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    margin: 2rem 3rem 0;
+}
+
+input {
+    border-radius: .5rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
 .form-section > .more-spacing {
     margin: 2rem 3rem;
 }
@@ -33,7 +44,8 @@ form {
     width: 100%;
     gap: 2rem;
     background-color: var(--secondary-background-color);
-    padding: 1rem 0;
+    padding: 2rem 0;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .container {
@@ -63,7 +75,7 @@ form {
 }
 
 .banner > img {
-    width: clamp(100px, 33%, 250px);
+    width: clamp(100px, 25%, 250px);
 }
 
 form > h2 {
@@ -87,4 +99,13 @@ form > h2 {
     flex-direction: column;
     width: max(40%, 300px);
     margin: 0 3rem 0;
+}
+
+.submit {
+    background-color: var(--button-color);
+    width: max(200px, 10%);
+    height: 3rem;
+    color: white;
+    border-radius: 1rem;
+    margin: 2rem 3rem 0;
 }
